@@ -22,7 +22,7 @@ workspace = {
     "fem-eci-aws-network" = {
       description         = "Automation for AWS network resources."
       execution_mode      = "remote"
-      project_id          = module.project["fem-eci-project"].id
+      project_id          = module.project["devops-learning-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-aws-network"
 
       variables = [
@@ -48,7 +48,7 @@ workspace = {
     "fem-eci-aws-cluster-prod" = {
       description         = "Automation for AWS cluster resources."
       execution_mode      = "remote"
-      project_id          = module.project["fem-eci-project"].id
+      project_id          = module.project["devops-learning-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-aws-cluster"
 
       variables = [
